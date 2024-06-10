@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">Ejercicio 1</a>
+      <a href="./ejercicio2.html">Ejercicio 2</a>
+      <a href="./ejercicio3.html">Ejercicio 3</a>
+
+      <h1>Ejercicio 3</h1>
+    </header>
+
+    <section class="container-principal">
+      <div class="titulo-ejer3">
+        <h3>Ingresa el Password</h3>
+      </div>
+
+      <div class="container-ejer3">
+        <div class="select3">
+          <select name="" id="select1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <div class="select3">
+          <select name="" id="select2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <div class="select3">
+          <select name="" id="select3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="resultado-ejer3">
+        <p id="resultado"></p>
+      </div>
+
+      <div class="tbn-ejer3">
+        <button
+          onclick="
+             
+            select1 = document.querySelector('#select1');
+            select2 = document.querySelector('#select2');
+            select3 = document.querySelector('#select3');
+            resp = document.querySelector('#resultado');
+                
+            if (select1 && select2 && select3) {
+            password = select1.value + select2.value + select3.value;
+
+                if (password === '911') {
+                    resp.innerHTML = 'Password 1 correcto';
+                    } else if (password === '714') {
+                        resp.innerHTML = 'Password 2 correcto';
+                    } else {
+                        resp.innerHTML = 'Password incorrecto';
+                    }
+                }
+            "
+        >
+          Ingresar
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

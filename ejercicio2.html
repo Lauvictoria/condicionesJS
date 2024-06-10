@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">Ejercicio 1</a>
+      <a href="./ejercicio2.html">Ejercicio 2</a>
+      <a href="./ejercicio3.html">Ejercicio 3</a>
+
+      <h1>Ejercicio 2</h1>
+    </header>
+
+    <section>
+      <div class="titulo-ejer2">
+        <h3>Puedes llevar hasta 10 Stickers</h3>
+      </div>
+
+      <div class="section-principal">
+        <div class="input">
+          <img src="./assets/img/sticker1.jpeg" alt="sticker1" />
+          <input type="text" id="input1" />
+        </div>
+        <div class="input">
+          <img src="./assets/img/sticker2.jpeg" alt="sticker2" />
+          <input type="text" id="input2" />
+        </div>
+        <div class="input">
+          <img src="./assets/img/sticker3.png" alt="sticker3" />
+          <input type="text" id="input3" />
+        </div>
+      </div>
+
+      <div class="resultado-ejer2">
+        <p id="resultado"></p>
+      </div>
+
+      <div class="button-ejer2">
+        <button
+          onclick="
+                input1 = Number(document.querySelector('#input1').value)
+                input2 = Number(document.querySelector('#input2').value)
+                input3 = Number(document.querySelector('#input3').value)
+                total = input1 + input2 + input3
+                resp = document.querySelector('#resultado')
+
+                if ( total < 10){
+                    resp.innerHTML = 'Llevas  ' + total + '  Stickers'
+                } else {
+                    resp.innerHTML = 'Llevas demasiados Stickers'
+                }
+
+                
+            "
+        >
+          Verificar
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

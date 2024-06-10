@@ -1,0 +1,58 @@
+.img-ejer1 {
+   width: 600px; 
+}
+.section-principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulo-ejer2{
+    display: flex;
+    justify-content: center;
+}
+.button-ejer2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.resultado-ejer2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container-ejer3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    align-items: center;
+}
+.select3{
+    margin: 10px;
+    
+}
+.titulo-ejer3{
+    display: flex;
+    justify-content: center;
+}
+.tbn-ejer3{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.container-principal{
+    border: 5px solid black;
+    width: 350px;
+    margin-left: 550px
+}
+.resultado-ejer3{
+    display: flex;
+    justify-content: center;
+}

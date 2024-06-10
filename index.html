@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">Ejercicio 1</a>
+      <a href="./ejercicio2.html">Ejercicio 2</a>
+      <a href="./ejercicio3.html">Ejercicio 3</a>
+
+      <h1>Ejercicio 1</h1>
+    </header>
+
+    <div>
+      <img
+        src="./assets/img/133578321905950941.jpg"
+        alt="random"
+        id="img-r"
+        class="img-ejer1"
+        onclick="
+            
+        imagen = document.querySelector('.img-ejer1')
+
+        if (imagen.style.border === '2px solid red') {
+            imagen.style.border = 'none'
+        } else {
+            imagen.style.border = '2px solid red'
+        }
+    "
+      />
+    </div>
+  </body>
+</html>
